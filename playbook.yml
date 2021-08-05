@@ -13,7 +13,7 @@
   - name: install git
     yum: name=git state=present
   - name: get repo
-    git: repo=https://github.com/Ashish-Rawat-hub/Devops-project1.git dest=/tmp/gitrepo force=yes
+    git: repo=https://github.com/Mrunmay1312/AnsibleDockerdemo.git dest=/tmp/gitrepo force=yes
   - name: Build Dockerfile
     command: chdir=/tmp/gitrepo docker build -t addressbook:ansible .
   - name: run Image
